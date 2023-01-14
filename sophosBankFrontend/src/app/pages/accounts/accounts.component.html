@@ -1,0 +1,12 @@
+<button type="button" class="btn btn-success" (click)="createProduct()">Create Product</button>
+<div *ngFor="let account of accounts" class="accounts-container">
+  <div id="container" >
+    <div class="card">
+       <h3 class="fs-5">Account Num: {{ account.accountNum }}</h3>
+       <div class="account-content">
+        <p>Balance: {{ account.balance }}</p>
+        <p>Exempt: {{ account.gmfExempt ? 'Exempt' : 'No Exempt' }}  </p>
+       </div>
+    </div>
+  </div>
+</div>

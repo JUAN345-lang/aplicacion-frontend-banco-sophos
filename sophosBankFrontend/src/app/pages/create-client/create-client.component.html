@@ -1,0 +1,61 @@
+<main class="main-container" >
+  <div id="container">
+    <div class="card">
+       <h3 class="fs-3">{{ title }}</h3>
+       <form [formGroup]="clientForm">
+            <div class="container-form">
+                <div>
+                    <label for="Name">Name:</label><br>
+                    <input class="form-control  input-sm" type="text" placeholder="Write your name" formControlName="name">
+                </div>
+                <div>
+                    <label for="Surname">Surname:</label><br>
+                    <input class="form-control"  type="text" placeholder="Write your Surname" formControlName="lastName">
+                </div>
+            </div>
+            <div class="container-form">
+                <!-- <div>
+                    <label for="phone">Phone:</label><br>
+                    <input class="form-control"  type="number" placeholder="Write your number" formControlPhone="phone">
+                </div> -->
+                <div>
+                    <label for="date_of_birth">Date of birth:</label><br>
+                    <input class="form-control"  type="date" placeholder="Write your identification number" formControlName="birthday">
+                </div>
+                <div>
+                  <label for="email">Email:</label><br>
+                  <input class="form-control"  type="email" id="input-email" placeholder="Write your email" formControlName="email">
+              </div>
+            </div>
+            <div class="container-form">
+                <div>
+                    <label for="ID_type">ID Type:</label><br>
+                    <select class="form-control"  name="ID" formControlName="typeIdentification">
+                        <option value="citizen ID">Citizen ID</option>
+                        <option value="passport">Passport</option>
+                        <option value="nit">NIT</option>
+                        <option value="Foreigner_ID">Foreigner ID</option>
+                        <option value="identity_card">Identity card</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="identification_number">Identification number:</label><br>
+                    <input class="form-control"  type="number" placeholder="Write your identification number" formControlName="identification">
+                </div>
+
+            </div>
+            <div class="d-grid gap-2 action-buttons">
+              <button class="btn btn-success" type="button" (click)="addClient()">Submit</button>
+              <button class="btn btn-secondary" type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+
+  <div class="accounts">
+    <app-accounts [userId]="userId"></app-accounts>
+  </div>
+</main>
+
+

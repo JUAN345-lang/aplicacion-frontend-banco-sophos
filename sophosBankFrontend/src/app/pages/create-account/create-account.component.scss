@@ -1,0 +1,43 @@
+#container {
+  width: 800px;
+  padding: 20px;
+}
+
+.container-form {
+  display: flex;
+  gap: 10px;
+  * {
+    width: -webkit-fill-available;
+  }
+}
+
+.form-check-input:checked {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+h3 {
+  background-color: rgb(231, 230, 230);
+  padding: 10px;
+  border: 1px solid rgb(185, 184, 184);
+}

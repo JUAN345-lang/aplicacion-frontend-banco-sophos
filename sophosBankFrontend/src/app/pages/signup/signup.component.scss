@@ -1,0 +1,76 @@
+:host {
+  height: 100vh;
+  background-image: url("../../../assets/img/login.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif, Arial, Helvetica;
+  padding: 20px;
+}
+
+#container_signin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 400px;
+  border-radius: 15px;
+  padding: 30px;
+  align-self: center;
+}
+
+form div h1{
+  margin-left: 85px;
+  color: white;
+}
+
+form div input{
+  border-radius: 4px;
+  width: 100%;
+}
+
+#name {
+  margin-right: 38px;
+}
+
+#email {
+  margin-right: 40px;
+}
+
+#password {
+  margin-right: 10px;
+}
+
+#address {
+  margin-right: 20px;
+
+}
+
+#phone {
+  margin-right: 32px;
+
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+form div{
+  padding-top: 15px;
+}
+
+#container_signin button {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 7px;
+  background-color: rgb(26, 100, 164);
+  color: white;
+}

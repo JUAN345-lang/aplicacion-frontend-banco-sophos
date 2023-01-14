@@ -1,0 +1,31 @@
+<div id="container_signin">
+  <form class="form" [formGroup]="signupForm">
+      <div>
+          <h1>Sign Up</h1>
+      </div>
+      <div class="form-field">
+        <label id="email">Name:</label>
+        <input type="email" placeholder="Write your name" formControlName="name">
+      </div>
+      <div class="form-field">
+        <label id="phone">Phone:</label>
+        <input type="text" placeholder="Write your phone" formControlName="phone">
+      </div>
+      <div class="form-field">
+        <label id="address">Address:</label>
+        <input type="text" placeholder="Write your address" formControlName="address">
+      </div>
+      <div class="form-field">
+        <label id="email">Email:</label>
+        <input type="email" placeholder="Write your email" formControlName="email">
+      </div>
+      <div class="form-field">
+          <label id="password">Password:</label>
+          <input type="password" placeholder="Write your password" formControlName="password">
+      </div>
+      <div>
+          <button type="submit" (click)="signUp()">Submit</button>
+      </div>
+
+  </form>
+</div>

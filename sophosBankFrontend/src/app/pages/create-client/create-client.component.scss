@@ -1,0 +1,48 @@
+#container{
+  width:500px;
+  display: flex;
+}
+
+.main-container {
+  padding: 20px;
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+h3 {
+  background-color: rgb(231, 230, 230);
+  padding: 10px;
+  border: 1px solid rgb(185, 184, 184);
+}
+
+.container-form{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  gap: 8px;
+  font-size: 12px;
+  div {
+    width: -webkit-fill-available;
+  }
+  * {
+    font-size: 12px;
+  }
+}
+
+#button-submit{
+  margin-top: 15px;
+  width: 415px;
+  background-color: rgb(4, 136, 4);
+  border-radius: 100px;
+  border: none;
+}
+
+.action-buttons {
+margin-top: 15px;
+}

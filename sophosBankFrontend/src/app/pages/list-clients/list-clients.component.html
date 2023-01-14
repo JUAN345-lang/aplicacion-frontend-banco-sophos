@@ -1,0 +1,29 @@
+<div class="card">
+  <h3 class="fs-3">Registred Clients</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th class="header-row" scope="col" *ngFor="let column of columnNames">{{ column }}</th>
+    </tr>
+  </thead>
+
+<tbody>
+    <tr *ngFor="let client of clients">
+      <th scope="row" class="item-row ">{{ client.id }}</th>
+      <th scope="row" class="item-row ">{{ client.typeIdentification | titlecase }}</th>
+      <th scope="row" class="item-row ">{{ client.identification }}</th>
+      <th scope="row" class="item-row ">{{ client.name | titlecase  }}</th>
+      <th scope="row" class="item-row ">{{ client.lastName | titlecase  }}</th>
+      <th scope="row" class="item-row ">{{ client.email }}</th>
+      <th scope="row" class="item-row ">{{ client.birthday | date }}</th>
+      <!-- <th scope="row">{{ client.phone }}</th> -->
+      <th scope="row" class="item-row ">{{ client.creationDate | date }}</th>
+      <th scope="row" >
+        <button class="btn btn-secondary" (click)="manageClient(client?.id ?? '')">Manage</button>
+      </th>
+    </tr>
+
+  </tbody>
+</table>
+</div>
