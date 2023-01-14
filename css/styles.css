@@ -8,26 +8,26 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: white;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
+
 header div img{
-    height: 30px;
+    height: 35px;
     width: 100px;
 }
 
 header div a{
     text-decoration: none;
     color: #0072C6;
-
 }
 
 #get_into{
     background-color: #0072C6;
     border-radius: 16px;
     padding: 7px;
+    
 }
 
 main div h1 {
@@ -36,6 +36,8 @@ main div h1 {
 
 #container_getInto{
     color: white;
+    width: 40px;
+    height: 40px;
 }
 
 main div img{
@@ -106,8 +108,4 @@ main div a{
     background-color: #0072C6;
     color: white;
     margin-left: 40px;
-}
-
-form input{
-    
 }
